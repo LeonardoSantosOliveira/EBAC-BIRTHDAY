@@ -1,0 +1,26 @@
+@use 'variables.scss';
+
+.button{
+    padding: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    max-width: 80%;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all ease .2s;
+    border-radius: 3px;
+
+    &-hero{
+        background-color: variables.$redColor;
+        color: #fff;
+
+        &:hover{
+            background-color: transparent;
+            border-color: variables.$redColor;
+            color: variables.$redColor;
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@use '../modules/variables.scss';
+@use '../modules/mixins.scss';
+
+#cake{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 0;
+
+    @include mixins.mobile{
+        display: block;
+        text-align: center;
+    }
+
+    .image{
+        width: 75%;
+    }
+
+    .text-container{
+        text-align: right;
+
+        @include mixins.mobile{
+            text-align: center;
+        }
+    }
+
+    .text-title{
+        font-size: 3.2em;
+    }
+}

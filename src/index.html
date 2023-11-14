@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário de Leonardo</title>
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="styles/main.scss">
+    <!-- SCRIPT DO PROJETO -->
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header id="hero">
+        <div class="container">
+            <div class="image-container" data-aos="fade-right" data-aos-duration="2000">
+                <img src="images/hero.svg" class="image" alt="hero image">
+            </div>
+            <div class="text-box" data-aos="fade-left" data-aos-duration="2000">
+                <h1 class="text-box-title style-font colored-text text-title">É FESTA!</h1>
+                <h2 class="text-box-subtitle style-font colored-text">Aniversário chegando!</h2>
+                <p class="text-box-text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam harum unde voluptates enim? Adipisci, molestiae et maxime, cum commodi ratione dolor unde earum optio illum velit.</p>
+                <ul class="timer">
+                    <li class="timer-item">
+                        <span class="timer-item-text" id="timer-days"></span>
+                    </li>
+                    <li class="timer-item">
+                        <span class="timer-item-text" id="timer-hours"></span>
+                    </li>
+                    <li class="timer-item">
+                        <span class="timer-item-text" id="timer-minutes"></span>
+                    </li>
+                    <li class="timer-item">
+                        <span class="timer-item-text" id="timer-seconds"></span>
+                    </li>
+                </ul>
+                <button type="button" class="button button-hero">Garantir minha vaga</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="cake">
+                <img src="images/cake.svg"  class="image" alt="cake" data-aos="fade-right" data-aos-duration="2500">
+                <div class="text-container" data-aos="fade-left" data-aos-duration="2500">
+                    <h3 class="style-font colored-text text text-title">Diversos bolos diferentes</h3>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe earum voluptatem ratione officia ad voluptas ab similique, id deserunt dignissimos nisi exercitationem, repellat eum laudantium natus nostrum possimus minus.</p>
+                </div>
+            </section>
+            <section id="churrasco">
+                <img src="images/churras.svg" class="image" alt="churrasco" data-aos="fade-right" data-aos-duration="2500">>
+                <div class="text-container" data-aos="fade-left" data-aos-duration="2500">
+                    <h3 class="style-font colored-text text text-title">Churrasco</h3>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe earum voluptatem ratione officia ad voluptas ab similique, id deserunt dignissimos nisi exercitationem, repellat eum laudantium natus nostrum possimus minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum animi neque, doloribus quaerat laborum cumque voluptate excepturi suscipit aliquam recusandae culpa vero accusamus illo pariatur vitae quibusdam debitis, provident sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nisi, suscipit, non tempore voluptatum eos nemo placeat assumenda sed molestiae recusandae veritatis delectus magnam. Iure cumque quibusdam dolor tempora ab!</p>
+                </div>
+            </section>
+            <section id="boxes">
+                <ul class="box" data-aos="zoom-in-down" data-aos-duration="1500">
+                    <li class="box-item">
+                        <i class="bi bi-card-checklist box-item-icon"></i>
+                        <p class="box-item-text">Lista de convidados</p>
+                    </li>
+                    <li class="box-item">
+                        <i class="bi bi-geo-alt-fill box-item-icon"></i>
+                        <p class="box-item-text">Local</p>
+                    </li>
+                    <li class="box-item">
+                        <i class="bi bi-calendar-date box-item-icon"></i>
+                        <p class="box-item-text">Data</p>
+                    </li>
+                    <li class="box-item">
+                        <i class="bi bi-cake2-fill box-item-icon"></i>
+                        <p class="box-item-text">Comemorar</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

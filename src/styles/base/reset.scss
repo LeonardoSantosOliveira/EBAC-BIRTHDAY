@@ -1,0 +1,16 @@
+@use '../modules/variables.scss';
+@use '../modules/mixins.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: variables.$bgColor;
+    width: 100vw;
+    height: 100vh;
+}

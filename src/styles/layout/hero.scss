@@ -1,0 +1,71 @@
+@use '../modules/variables.scss';
+@use '../modules/mixins.scss';
+
+#hero{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+    .container{
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        @include mixins.mobile{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .image{
+        width: 75%;
+    }
+
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        margin-left: -45px;
+
+        @include mixins.mobile{
+            display: block;
+            text-align: center;
+            margin-left: 0;
+            }
+        }
+
+        &-subtitle{
+            font-size: 1.4em;
+            white-space: nowrap;
+            margin-top: -16px;
+            user-select: none;
+        }
+    }
+
+    .timer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        margin-bottom: 16px;
+        user-select: none;
+
+        @include mixins.mobile{
+            justify-content: center;
+            }
+
+        &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 5px solid variables.$redColor;
+        border-radius: 3px;
+        height: 65px;
+        width: 65px;
+
+            &-text{
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+        }
+    }

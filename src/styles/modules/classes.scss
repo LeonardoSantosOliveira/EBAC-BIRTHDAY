@@ -1,0 +1,39 @@
+@use 'variables.scss';
+@use 'mixins.scss';
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include mixins.tablet{
+        max-width: 80%;
+        width: 100%;
+    }
+
+    @include mixins.mobile{
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+.style-font{
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.colored-text{
+    color: variables.$redColor;
+}
+
+.text{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.text-title{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    user-select: none;
+}
